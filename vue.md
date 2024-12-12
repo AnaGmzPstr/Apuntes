@@ -86,3 +86,23 @@ La directiva `v-on` permet afegir un event listener a un element HTML. Per exemp
 ## Reactivitat a Vue.js 3 computed()
 
 La reactivitat a Vue.js 3 es basa en el concepte de `computed()`. Aquesta funció permet crear una propietat calculada que es reactualitza  quan els seus dependents canvien.
+
+## Repás examen VUE
+
+- Components reutilitzables, sempre en la carpeta components
+- El nav ha de ser un component
+- Utilitzar params en `:to="{name: 'destination.show', params:{id: destination.id,slug:destination.slug}}"`
+- Exemple d'utilització de props (pràctica destinations):
+
+```vue
+<script setup>
+const props = defineProps(['id']);
+
+// Troba la destinació en funció de l'ID
+const destination = computed(() =>
+
+  sourceData.destinations.find(destination => destination.id === props.id)
+
+);
+</script>
+```
