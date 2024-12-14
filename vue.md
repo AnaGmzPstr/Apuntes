@@ -1,7 +1,5 @@
 # Vue
 
-Instal·lar quasar
-
 Iniciar un projecte
 
 ```bash
