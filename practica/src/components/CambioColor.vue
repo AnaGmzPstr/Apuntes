@@ -1,13 +1,13 @@
 <template>
-    <p>Color seleccionado: 
+    <p class="fs-4">Color seleccionado: 
         <i 
-        class="bi bi-suit-heart-fill"
+        class="bi bi-flower1 fs-3"
         :style="{color: color}">
         </i>
     </p>
-    <button type="button" class="btn btn-success" @click="changeColor('green')">Cambiar a verde</button>
-    <button type="button" class="btn btn-danger" @click="changeColor('red')">Cambiar a rojo</button>
-    <button type="button" class="btn btn-primary" @click="changeColor('blue')">Cambiar a azul</button>
+    <button type="button" class="btn text-light" style="background-color: #ffc107;" @click="changeColor('#ffc107')"><i class="bi bi-flower1"></i></button>
+    <button type="button" class="btn text-light" style="background-color: #d63384;" @click="changeColor('#d63384')"><i class="bi bi-flower1"></i></button>
+    <button type="button" class="btn text-light" style="background-color: #198754;" @click="changeColor('#198754')"><i class="bi bi-flower1"></i></button>
 </template>
 <script setup>
 import { inject } from 'vue';

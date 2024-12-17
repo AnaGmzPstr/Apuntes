@@ -1,5 +1,8 @@
 <template>
     <h1>Computed</h1>
+    <!-- Descripción computed -->
+    <p>Computed es un método que se ejecuta cada vez que cambia la información de <strong>data</strong> o <strong>props</strong>.</p>
+    
     <hr>
     <h2>Filtrar por nombre</h2>
     <input type="text" v-model="search" placeholder="Buscar...">
@@ -21,7 +24,15 @@
 import { ref, computed } from 'vue';
 // Ejercicio 1
 const search = ref('');
-const items = ref(['Manzana', 'Mandarina', 'Mango', 'Cereza', 'Coco', 'Fresa', 'Mora']);
+const items = ref([
+    'Cereza', 
+    'Manzana', 
+    'Fresa', 
+    'Mora',
+    'Mandarina', 
+    'Mango', 
+    'Coco', 
+]);
 
 const filterItems = computed(() => {
     return items.value.filter(item => item.toLowerCase().includes(search.value.toLowerCase())

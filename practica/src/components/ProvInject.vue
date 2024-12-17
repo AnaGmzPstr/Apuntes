@@ -15,7 +15,7 @@ import { ref, provide } from 'vue';
 // Ejercicio 1
 import CambioColor from '@/components/CambioColor.vue'
 // Variable reactiva y el color inicial es el azul
-const color = ref('blue');
+const color = ref('#198754');
 
 // Proveer el color y la función para cambiar el icono
 provide('color', color);

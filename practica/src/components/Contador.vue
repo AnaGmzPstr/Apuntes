@@ -6,9 +6,9 @@
         @click="incrementar">
             <i class="bi bi-plus-circle"></i>
         </button>
-        <p>{{ contador }}</p>
+        <p class="fs-4">{{ contador }}</p>
         <button 
-        type="button" class="btn btn-primary"
+        type="button" class="btn btn-danger"
         @click="decrementar">
             <i class="bi bi-dash-circle"></i>
         </button>
