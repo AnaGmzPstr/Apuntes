@@ -64,3 +64,17 @@ async function ejemploAsinc() {
 
 ## Callback function
 Una función de llamada a una función que se pasa como argumento a otra función, y que se ejecuta cuando la función que la recibe ha terminado de ejecutarse.
+
+```javascript
+function procesarUsuario(nombre, callback) {
+    console.log(`Hola, ${nombre}`);
+    callback();
+}
+
+function despedirse() {
+    console.log("Adiós, nos vemos pronto!");
+}
+
+procesarUsuario("Ana", despedirse);
+
+```
